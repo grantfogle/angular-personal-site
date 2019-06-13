@@ -1,0 +1,8 @@
+nav {
+    background-color: #563d7c;
+    height: 60px;
+}
+nav ul {
+    list-style-type: none;
+    height: 100%;
+}
