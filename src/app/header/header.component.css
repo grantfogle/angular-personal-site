@@ -1,8 +1,22 @@
 nav {
-    background-color: #563d7c;
-    height: 60px;
+  background-color: #fff;
+  height: 60px;
+  box-shadow: 6px 0 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  position: fixed;
 }
 nav ul {
-    list-style-type: none;
-    height: 100%;
+  list-style-type: none;
+  height: 100%;
+}
+
+nav ul li a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #343a40;
+  color: #fff;
 }

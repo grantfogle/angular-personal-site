@@ -1,3 +1,9 @@
 <!-- <img src="{{}}" /> -->
-<img src="{{ exampleBlogPosts[0].img }}" style="height: 40%;" />
-<p>{{ exampleBlogPosts[0].post }}</p>
+<img src="{{ exampleBlogPosts[0].img }}" style="height: 300px; width: 100vw;" />
+<div class="container">
+  <h1>{{ exampleBlogPosts[0].headline }}</h1>
+  <p>{{ exampleBlogPosts[0].author }}</p>
+  <p>{{ exampleBlogPosts[0].dateAdded }}</p>
+  <p>{{ exampleBlogPosts[0].post }}</p>
+</div>
+<a href="blog/:id"></a>
