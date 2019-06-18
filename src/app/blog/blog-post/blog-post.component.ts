@@ -45,13 +45,13 @@ Proin at efficitur odio, in bibendum risus. Mauris tincidunt egestas feugiat. Ve
   ];
   filteredBlog = {};
   arr = [];
+  id = "";
+
   filterBlog(id) {
     this.filteredBlog = this.exampleBlogPosts.filter(
       blog => blog.id === parseInt(id)
     )[0];
-    // console.log(this.filteredBlog);
   }
-  id = "";
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
