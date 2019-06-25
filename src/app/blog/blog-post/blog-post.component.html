@@ -1,11 +1,14 @@
 <!-- <img src="{{}}" /> -->
-<img src="{{ filteredBlog.img }}" style="height: 300px; width: 100vw;" />
-
-<a href="/blog/{{ id }}#section1"><i class="fa fa-angle-down fa-5x"></i></a>
+<img class="blog-header-image" src="{{ filteredBlog.img }}" />
 <div class="container">
-  <h1>{{ filteredBlog.headline }}</h1>
-  <p>{{ filteredBlog.author }}</p>
-  <p>{{ filteredBlog.dateAdded }}</p>
-  <p>{{ filteredBlog.post }}</p>
+  <a href="/blog/{{ id }}#section1"
+    ><i class="fa fa-angle-down fa-5x text-dark"></i
+  ></a>
+  <div class="blog-content">
+    <h1>{{ filteredBlog.headline }}</h1>
+    <h6>{{ filteredBlog.dateAdded }}</h6>
+    <p>{{ filteredBlog.post }}</p>
+  </div>
+  <h2 id="section1">stuffs</h2>
+  <!-- Blog signup / Call to Action-->
 </div>
-<h2 id="section1">stuffs</h2>
